@@ -1,2 +1,173 @@
 # webproject
 webproject Description
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Bus Tour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Bus Tour</h1>
+        <p>Explore the bus interior and seating arrangement before booking.</p>
+    </header>
+    
+    <section class="tour-container">
+        <div id="panorama" class="panorama"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bus Tours Company</p>
+    </footer>
+
+    <!-- Include Pannellum library -->
+    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internationalized Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome to Our Website</h1>
+        <p id="description">This website supports multiple languages.</p>
+        <label for="language-select" id="language-label">Choose Language: </label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+        </select>
+    </header>
+
+    <section id="content">
+        <h2 id="section-title">About Us</h2>
+        <p id="section-description">We are a company dedicated to providing quality services.</p>
+    </section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Route Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,directions&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Route Planner</h1>
+        <p>Plan your journey by selecting start and end points, add waypoints, and view suggested routes.</p>
+    </header>
+
+    <div class="controls">
+        <label for="start">Start Point: </label>
+        <input type="text" id="start" placeholder="Enter starting location">
+        
+        <label for="end">End Point: </label>
+        <input type="text" id="end" placeholder="Enter destination">
+        
+        <label for="waypoint">Add Waypoint (Optional): </label>
+        <input type="text" id="waypoint" placeholder="Add a waypoint">
+        
+        <button onclick="calculateRoute()">Get Route</button>
+    </div>
+
+    <div id="map"></div>
+
+    <footer>
+        <p>&copy; 2025 Journey Planner Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    <footer>
+        <p id="footer-text">&copy; 2025 Compan
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #007bff; color: #fff; padding: 15px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        form { display: flex; flex-direction: column; gap: 10px; }
+        input, button { padding: 10px; font-size: 16px; }
+        #searchResults { margin-top: 20px; }
+        .bus { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bus Ticket Booking</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>Search for Buses</h2>
+    <form id="busSearchForm">
+        <label for="from">From:</label>
+        <input type="text" id="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" required>
+
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <section id="searchResults">
+        <h2>Available Buses</h2>
+        <div id="resultsContainer"></div>
+    </section>
+</main>
+
+<script>
+    document.getElementById("busSearchForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const from = document.getElementById("from").value;
+        const to = document.getElementById("to").value;
+        const date = document.getElementById("date").value;
+        
+        const resultsContainer = document.getElementById("resultsContainer");
+        resultsContainer.innerHTML = `<div class="bus">
+            <p><strong>Bus Name:</strong> Express Bus</p>
+            <p><strong>From:</strong> ${from}</p>
+            <p><strong>To:</strong> ${to}</p>
+            <p><strong>Date:</strong> ${date}</p>
+            <p><strong>Price:</strong>Rs.850</p>
+            <p><strong>click to pay:</strong>Rs.850</p>
+             <p>strong>click to confirm:</strong> CONFIRM</p>
+        </div>`;
+    });
+</script>
+
+</body>
+</html>
+
+
